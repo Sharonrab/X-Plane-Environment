@@ -31,12 +31,18 @@
 #  THIS SETUP WILL NOT DO INTER-CHANNEL MIXING.  This feature is to be added if needed. 
 #  This might be a problem for some heli setups.
 
-#Comm,COM3, 38400
+#Comm,COM4, 38400
 #Comm,/dev/ttyUSB0,38400
 #Comm,/dev/cu.usbserial-A600dP4v,38400
 Port,14551
 Overide,sim/operation/override/override_flightcontrol
-Control,1,sim/joystick/FC_roll,13154,3661,3661,-1,-1
-Control,2,sim/joystick/FC_ptch,13154,3661,3661,-1,-1
-Control,4,sim/joystick/FC_hdng,13154,3661,3661,-1,-1
-Engine,3,255,9386,7429,0,1,0
+#SIL
+#Control,1,sim/joystick/FC_roll,13154,3661,3661,-1,-1
+#Control,2,sim/joystick/FC_ptch,13154,3661,3661,-1,-1
+#Control,4,sim/joystick/FC_hdng,13154,3661,3661,-1,-1
+#Engine,3,255,9386,7429,0,1,0
+#HIL
+Control,1,sim/joystick/FC_roll,12852,3587,3557,-1,-1
+Control,2,sim/joystick/FC_ptch,12842,3587,3557,-1,-1
+Control,4,sim/joystick/FC_hdng,12884,3587,3557,-1,-1
+Engine,3,255,9200,7263,0,1,0
